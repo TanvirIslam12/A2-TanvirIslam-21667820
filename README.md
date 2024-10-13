@@ -4,8 +4,7 @@ IMPORTANT: Once you've cloned this to your forked repository, ensure that you co
 
 Please include your shared repository link here:
 
-Example:
-Choiru's shared repository: https://github.com/choiruzain-latrobe/Assignment2.git
+ https://github.com/TanvirIslam12/A2-TanvirIslam-21667820.git
 
 
 Make sure for **your case it is in Private**
@@ -136,3 +135,42 @@ http get http://localhost/api/contacts/1/phones
 ```
 
 ### Phone API
+# Task1- Changes to Table
+1) “Delete Contact” instead of just “Delete”.
+   ![Delete Contact Button](./Screenshots/picture1_ts1.png "Delete to Delete Contact")
+
+2) “Add Tanvir’s Phone” instead of "Add”.
+   ![Add Tanvir's phone](./Screenshots/picture2_ts1.png "Add to Add Tanvir's phone")
+
+3) Make the placeholder “Name” to a drop down menu.
+![Drop down](./Screenshots/picture3_ts1.png "placeholder=Name to Drop down")
+
+4) In the <tr> element of the table, Change “Name” to “Phone Type”.
+![Name to Phone Type](./Screenshots/picture4_ts1.png "<tr> element from Name to Phone Type")
+
+
+
+## Task2- API Commands
+1) Show the API command for “Show Contact”
+![Show Conatct](./Screenshots/picture1_ts2.png "Show Conatct output")
+
+2) Show the API command for “Add Contact”.
+![Add Conatct](./Screenshots/picture2_ts2.png "Add Conatct output")
+
+3) Show the API command for “Delete Contact”.
+![Delete Conatct](./Screenshots/picture3_ts2.png "Delete Conatct output")
+
+4) Show the API command for “Update Contact”.
+![Update Conatct](./Screenshots/picture4_ts2.png "Update Conatct output")
+
+5) Show the API command for “Show phone”.
+![Show Phone](./Screenshots/picture5_ts2.png "Show Phone output")
+
+6) Show the API command for “Add Phone”.
+![Add Phone](./Screenshots/picture6_ts2.png "Add Phone output")
+
+7) Show the API command for “Delete Phone”.
+![Delete Phone](./Screenshots/picture7_ts2.png "Delete Phone output")
+
+8) Show the API command for “Update Phone”.\
+![Update Phone](./Screenshots/picture8_ts2.png "Update Phone output")
