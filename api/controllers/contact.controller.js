@@ -7,6 +7,7 @@ const Op = db.Sequelize.Op;
 exports.create = (req, res) => {
     const contact = {
         name: req.body.name,
+        address: req.body.address
     };
 
     Contacts.create(contact)
@@ -54,7 +55,12 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     const id = req.params.contactId;
 
-    Contacts.update(req.body, {
+    const updatedContact = {
+        name: req.body.name,
+        address: req.body.address
+    };
+
+    Contacts.update(updatedContact, {
         where: { id: id }
     })
     .then(num => {

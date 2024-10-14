@@ -137,10 +137,11 @@ http get http://localhost/api/contacts/1/phones
 ### Phone API
 # Task1- Changes to Table
 1) “Delete Contact” instead of just “Delete”.
-   ![Delete Contact Button](./Screenshots/picture1_ts1.png "Delete to Delete Contact")
+![Delete Contact Button](./Screenshots/picture1_ts1.png "Delete to Delete Contact")
+
 
 2) “Add Tanvir’s Phone” instead of "Add”.
-   ![Add Tanvir's phone](./Screenshots/picture2_ts1.png "Add to Add Tanvir's phone")
+![Add Tanvir's phone](./Screenshots/picture2_ts1.png "Add to Add Tanvir's phone")
 
 3) Make the placeholder “Name” to a drop down menu.
 ![Drop down](./Screenshots/picture3_ts1.png "placeholder=Name to Drop down")
@@ -174,3 +175,30 @@ http get http://localhost/api/contacts/1/phones
 
 8) Show the API command for “Update Phone”.\
 ![Update Phone](./Screenshots/picture8_ts2.png "Update Phone output")
+
+
+
+## Task3- API Commands test after Changes
+1) Show the API command for “Show Contact”
+![Show Conatct](./Screenshots/picture1_ts3.png "Show Conatct output")
+
+2) Show the API command for “Add Contact”.
+![Add Conatct](./Screenshots/picture2_ts3.png "Add Conatct output")
+
+3) Show the API command for “Delete Contact”.
+![Delete Conatct](./Screenshots/picture3_ts3.png "Delete Conatct output")
+
+4) Show the API command for “Update Contact”.
+![Update Conatct](./Screenshots/picture4_ts3.png "Update Conatct output")
+
+5) Show the API command for “Show phone”.
+![Show Phone](./Screenshots/picture5_ts3.png "Show Phone output")
+
+6) Show the API command for “Add Phone”.
+![Add Phone](./Screenshots/picture6_ts3.png "Add Phone output")
+
+7) Show the API command for “Delete Phone”.
+![Delete Phone](./Screenshots/picture7_ts3.png "Delete Phone output")
+
+8) Show the API command for “Update Phone”.\
+![Update Phone](./Screenshots/picture8_ts3.png "Update Phone output")
