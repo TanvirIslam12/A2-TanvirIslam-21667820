@@ -202,3 +202,34 @@ http get http://localhost/api/contacts/1/phones
 
 8) Show the API command for “Update Phone”.\
 ![Update Phone](./Screenshots/picture8_ts3.png "Update Phone output")
+
+
+
+
+## Task4- Create Company Tables and APIs to test it
+1) Create “companies” table.
+![Companies table](./Screenshots/picture1_ts4.png "Create companies table")
+
+
+2) Show “company” table.
+![Company Table](./Screenshots/picture2_ts4.png "Show Company Table")
+
+# Create APIs
+
+3) “Create a New Company”
+![Create Company](./Screenshots/picture3_ts4.png "New Company")
+
+4) “Get All Companies for a Specific Contact”
+![Get All Companies](./Screenshots/picture4_ts4.png "Show All companies for contact")
+
+
+5) “Get a Single Company by ID for a Specific Contact”
+![Get a Company](./Screenshots/picture5_ts4.png "Show Specific Company for conatct")
+
+
+6) “Update a Company by ID for a Specific Contact”
+![Update Company](./Screenshots/picture6_ts4.png "Update a company for a contact")
+
+
+7) “Delete a Company by ID for a Specific Contact”
+![Delete Company](./Screenshots/picture7_ts4.png "Delete a Company for a Contact")
