@@ -9,7 +9,7 @@ var corsOptions = {
 
 const db = require("./models");
 db.sequelize.sync({ force: false }).then(() => {
-    console.log("Drop and re-sync db.");
+    console.log("DB sync complete.");
 });
 
 app.use(cors(corsOptions));
@@ -28,6 +28,7 @@ app.get("/", (req, res) => {
 require("./routes/contacts.routes")(app);
 require("./routes/phones.routes")(app);
 require("./routes/stats.routes")(app);
+require("./routes/companies.routes")(app);
 
 // set port, listen for requests
 const PORT = 5000;
