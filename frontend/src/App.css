@@ -165,3 +165,52 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button.green {
+    background-color: #28a745;
+    color: white;
+}
+
+.button.blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+
+.button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button.green {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.button.blue {
+    background-color: #2196F3; /* Blue */
+    color: white;
+}
+
+.button.red {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.8;
+}

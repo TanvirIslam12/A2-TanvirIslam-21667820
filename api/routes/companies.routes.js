@@ -7,11 +7,11 @@ module.exports = app => {
 
     router.get("/contacts/:contactId/companies", companies.findAll);
 
-    router.get("/contacts/:contactId/companies/:companyId", companies.findOne);
+    router.get("/contacts/:contactId/companies/:company_id", companies.findOne);
 
-    router.put("/contacts/:contactId/companies/:companyId", companies.update);
+    router.put("/contacts/:contactId/companies/:company_id", companies.update);
 
-    router.delete("/contacts/:contactId/companies/:companyId", companies.delete);
+    router.delete("/contacts/:contactId/companies/:company_id", companies.delete);
 
     app.use('/api', router);
 };

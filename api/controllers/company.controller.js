@@ -39,21 +39,21 @@ exports.findAll = (req, res) => {
 // Get a single company by ID for a specific contact
 exports.findOne = (req, res) => {
     const contactId = req.params.contactId;
-    const companyId = req.params.companyId;
+    const company_id = req.params.company_id;
 
-    Company.findOne({ where: { company_id: companyId, contact_id: contactId } })
+    Company.findOne({ where: { company_id: company_id, contact_id: contactId } })
         .then(data => {
             if (data) {
                 res.send(data);
             } else {
                 res.status(404).send({
-                    message: `Cannot find Company with id=${companyId} for contact id=${contactId}.`
+                    message: `Cannot find Company with id=${company_id} for contact id=${contactId}.`
                 });
             }
         })
         .catch(err => {
             res.status(500).send({
-                message: "Error retrieving Company with id=" + companyId + " for contact id=" + contactId
+                message: "Error retrieving Company with id=" + company_id + " for contact id=" + contactId
             });
         });
 };
@@ -61,7 +61,7 @@ exports.findOne = (req, res) => {
 // Update a company by ID for a specific contact
 exports.update = (req, res) => {
     const contactId = req.params.contactId;
-    const companyId = req.params.companyId;
+    const company_id = req.params.company_id;
 
     const updatedCompany = {
         company_name: req.body.company_name,
@@ -70,7 +70,7 @@ exports.update = (req, res) => {
     };
 
     Company.update(updatedCompany, {
-        where: { company_id: companyId, contact_id: contactId }
+        where: { company_id: company_id, contact_id: contactId }
     })
     .then(num => {
         if (num == 1) {
@@ -79,13 +79,13 @@ exports.update = (req, res) => {
             });
         } else {
             res.send({
-                message: `Cannot update Company with id=${companyId} for contact id=${contactId}. Maybe Company was not found or req.body is empty!`
+                message: `Cannot update Company with id=${company_id} for contact id=${contactId}. Maybe Company was not found or req.body is empty!`
             });
         }
     })
     .catch(err => {
         res.status(500).send({
-            message: "Error updating Company with id=" + companyId + " for contact id=" + contactId
+            message: "Error updating Company with id=" + company_id + " for contact id=" + contactId
         });
     });
 };
@@ -93,10 +93,10 @@ exports.update = (req, res) => {
 // Delete a company by ID for a specific contact
 exports.delete = (req, res) => {
     const contactId = req.params.contactId;
-    const companyId = req.params.companyId;
+    const company_id = req.params.company_id;
 
     Company.destroy({
-        where: { company_id: companyId, contact_id: contactId }
+        where: { company_id: company_id, contact_id: contactId }
     })
     .then(num => {
         if (num == 1) {
@@ -105,13 +105,13 @@ exports.delete = (req, res) => {
             });
         } else {
             res.send({
-                message: `Cannot delete Company with id=${companyId} for contact id=${contactId}. Maybe Company was not found!`
+                message: `Cannot delete Company with id=${company_id} for contact id=${contactId}. Maybe Company was not found!`
             });
         }
     })
     .catch(err => {
         res.status(500).send({
-            message: "Could not delete Company with id=" + companyId + " for contact id=" + contactId
+            message: "Could not delete Company with id=" + company_id + " for contact id=" + contactId
         });
     });
 };

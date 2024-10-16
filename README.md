@@ -233,3 +233,20 @@ http get http://localhost/api/contacts/1/phones
 
 7) “Delete a Company by ID for a Specific Contact”
 ![Delete Company](./Screenshots/picture7_ts4.png "Delete a Company for a Contact")
+
+
+
+## Task5- Frontend for Company Table
+
+1) Show Before Clicking "Add Company"
+Before we add the Company and its address we have click on the green button to open the Editing mode, that is when we insert the Company_name and Company_address.
+![Add Company](./Screenshots/picture1_ts5.png "Show Add company BUtton")
+
+2) Show the "cancel Button"
+When we click the Add Company button it takes us to the Edit Mode to enter name and address of the Company, but when we decide to exit the Edit mode we click the blue "Cancel Button"
+![Cancel Button](./Screenshots/picture2_ts5.png "Show cancel Button")
+
+3) Show the names of the Company table column.
+We can see 3 columns present, 1 for the name, another for address and the last to record their action.
+![Columnn names](./Screenshots/picture3_ts5.png "Show Company table Column names ")
+

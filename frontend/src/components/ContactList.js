@@ -1,8 +1,7 @@
 import Contact from './Contact.js';
 import NewContact from './NewContact.js';
 
-function ContactList(props) {
-    const {contacts, setContacts} = props;
+function ContactList({ contacts, setContacts, setSelectedContactId }) {
 
 	return (
 		<div className='contact-list'>
@@ -12,13 +11,15 @@ function ContactList(props) {
 
             <hr />
 
-            {
-                contacts.map((contact) => {
-                    return (
-                        <Contact key={contact.id} contact={contact} contacts={contacts} setContacts={setContacts} />
-                    );
-                })
-            }
+            {contacts.map(contact => (
+                <Contact 
+                    key={contact.id} 
+                    contact={contact} 
+                    contacts={contacts}
+                    setContacts={setContacts}
+                    setSelectedContractId= {setSelectedContactId}
+                />
+            ))}
         </div>
 	);
 }

@@ -89,9 +89,11 @@ exports.delete = (req, res) => {
     Phones.destroy({
         where: { contactId: id }
     })
-    .then(Companies.destroy({
-        where: { contactId: id }
-    }))
+    .then(comp => {
+        Companies.destroy({
+            where: { contact_id: id }
+        });
+    })
     .then(num => {
         Contacts.destroy({
             where: { id: id }
